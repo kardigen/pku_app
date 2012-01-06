@@ -1,0 +1,52 @@
+block append head
+  title!= title
+  
+script
+  $(function(){
+    $('#main-menu #calc').addClass('active')
+  })
+.container  
+  h2 Kalkulator
+  section.span13
+    h3 Dodaj produkt
+    p dodaj i przelicz co tam sobie chcesz
+    .well
+      form.form-stacked
+        fieldset
+          legend Dodaj produkt
+          .clearfix
+            .span5.pull-left
+              label Produkt
+              .input
+                input#products.span4
+                span.help-block Wpisz i wybierz nazwę produktu
+            .span3.pull-left
+              label Ilość
+              .input
+                input#amount.span2
+                span.help-block Ilość np. 10 kg., 2 szt.
+            .span2.pull-left
+              label Masa Ciała
+              .input
+                input#amount.span1
+                span.help-block waga w kg.
+            .span2.pull-right
+              .input
+                a.btn.danger Dodaj
+              
+  section.span13
+    h3 Tabela produktów
+    table.bordered-table.zebra-striped
+      th Produkt
+      th Ilość
+      th Białko
+      th Fenyloalanina
+      th Węglowodany
+      th Tłuszcze
+      th Kalorie
+      th Usuń
+      
+   
+   section.span13
+    .well
+      a.btn Drukuj
