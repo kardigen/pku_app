@@ -1,11 +1,14 @@
+extends layout
+
 block append head
-  title!= title
+  title Title
   
-script
-  $(function(){
-    $('#main-menu #desc2').addClass('active')
-  })
-  
-.container
-  h2 Opis 2
-    p tu bedzie jakiś tekst
+block content  
+  script
+    $(function(){
+      $('#main-menu #desc2').addClass('active')
+    })
+    
+  .container
+    h2 Opis 2
+      p tu bedzie jakiś tekst
